@@ -11,7 +11,7 @@ version = "0.1.0"
 edition = "2021"
 authors = ["Rust Cargo Showcase Team"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/exemplo/cargo-showcase"
+repository = "https://github.com/BGLuis/cargo-showcase"
 
 # Perfil de Desenvolvimento (Dev) - Rápido para iterar
 [profile.dev]
