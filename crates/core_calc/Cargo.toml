@@ -1,0 +1,15 @@
+[package]
+name = "core_calc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Biblioteca central de cálculos para demonstração do Cargo"
+
+[features]
+default = []
+crypto = []
+fastmath = []
+
+[[bench]]
+name = "benchmark"
+harness = false

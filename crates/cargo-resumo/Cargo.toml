@@ -1,0 +1,11 @@
+[package]
+name = "cargo-resumo"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Plugin/Subcomando customizado do Cargo para resumir a arquitetura do workspace"
+
+# Permite ser invocado tanto como executável binário quanto subcomando do Cargo
+[[bin]]
+name = "cargo-resumo"
+path = "src/main.rs"

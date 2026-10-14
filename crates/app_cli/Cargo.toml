@@ -1,0 +1,14 @@
+[package]
+name = "app_cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Aplicação executável de demonstração do sistema Cargo"
+
+[dependencies]
+core_calc = { path = "../core_calc" }
+
+[features]
+default = []
+crypto = ["core_calc/crypto"]
+fastmath = ["core_calc/fastmath"]

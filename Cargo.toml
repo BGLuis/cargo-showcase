@@ -1,0 +1,31 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/core_calc",
+    "crates/app_cli",
+    "crates/cargo-resumo",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Seminário de Ferramentas de Build <aluno@pucminas.br>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/exemplo/cargo-seminario"
+
+# Perfil de Desenvolvimento (Dev) - Rápido para iterar
+[profile.dev]
+opt-level = 0
+debug = true
+
+# Perfil de Release - Otimização agressiva, LTO e Stripping de símbolos
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+# Otimização específica para scripts de build e macros em tempo de desenvolvimento
+[profile.dev.build-override]
+opt-level = 1

@@ -1,0 +1,12 @@
+[alias]
+# Atalhos customizados demonstrando a extensibilidade via configuração
+fast = "check --workspace"
+test-all = "test --workspace"
+demo = "run -p app_cli"
+demo-release = "run -p app_cli --release"
+audit-deps = "deny check"
+cov = "llvm-cov --workspace --text"
+
+[build]
+# Define a compilação incremental como padrão para desenvolvimento
+incremental = true
