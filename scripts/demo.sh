@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# Script de Demonstração ao Vivo do Cargo (Rust)
-# Seminário de Ferramentas de Build - PUC Minas
-# Professor: Diego Augusto de Faria Barros
+# Script de Demonstração Prática do Cargo (Rust)
+# Exemplos e Capacidades: Do Básico ao Avançado
 # ==============================================================================
 
 set -e
@@ -34,8 +33,8 @@ pause() {
 header() {
     clear 2>/dev/null || true
     echo -e "${MAGENTA}╔════════════════════════════════════════════════════════════════════════╗${RESET}"
-    echo -e "${MAGENTA}║      SEMINÁRIO: FERRAMENTAS DE BUILD - CARGO (LINGUAGEM RUST)         ║${RESET}"
-    echo -e "${MAGENTA}║      Demonstração Prática ao Vivo (Tempo Estimado: 10 Minutos)        ║${RESET}"
+    echo -e "${MAGENTA}║           FERRAMENTAS DE BUILD: CARGO (LINGUAGEM RUST)                 ║${RESET}"
+    echo -e "${MAGENTA}║           Demonstração Prática: Do Básico ao Avançado                  ║${RESET}"
     echo -e "${MAGENTA}╚════════════════════════════════════════════════════════════════════════╝${RESET}"
     echo ""
 }
@@ -149,4 +148,4 @@ echo -e "${BLUE}$ PATH=\"\$PWD/target/debug:\$PATH\" cargo resumo${RESET}"
 PATH="$PWD/target/debug:$PATH" cargo resumo
 echo ""
 echo -e "${GREEN}${BOLD}🎉 Fim da Demonstração Prática do Cargo!${RESET}"
-echo -e "O repositório cobriu as 7 características essenciais e todos os aspectos do seminário."
+echo -e "Demonstração completa das capacidades essenciais e avançadas da ferramenta de build."

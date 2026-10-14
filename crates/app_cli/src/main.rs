@@ -1,7 +1,7 @@
 fn main() {
     println!("╔════════════════════════════════════════════════════════════════╗");
     println!("║       DEMONSTRAÇÃO DE CAPACIDADES DO CARGO (RUST)              ║");
-    println!("║       Seminário de Ferramentas de Build - PUC Minas            ║");
+    println!("║       Exemplo Prático: Do Básico ao Avançado                   ║");
     println!("╚════════════════════════════════════════════════════════════════╝");
 
     // Exibição dos metadados injetados em tempo de compilação pelo build.rs
